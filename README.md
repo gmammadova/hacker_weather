@@ -1,28 +1,30 @@
 # HackerWeather
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/hacker_weather`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem is a shortcut to get weather temperature for your city without leaving your most favorite place - terminal.
+For now, it supports only Canadian cities.
 
 ## Installation
 
-Add this line to your application's Gemfile:
 
-```ruby
-gem 'hacker_weather'
 ```
-
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install hacker_weather
+$ gem install hacker_weather
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+hw <province> <city>
+```
+Example: 
+```
+$ hw ontario ottawa
+Fetching placecode for the given city and province
+Placecode corresponding to ontario/ottawa is caon0512
+Fetching temperature
+Temperature for ontario/ottawa is 17 degrees Celsius
+
+This program is for learning purposes and the data is pulled from https://www.theweathernetwork.com/ca/weather/ontario/ottawa
+```
 
 ## Development
 
@@ -32,4 +34,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hacker_weather.
+Bug reports and pull requests are welcome on GitHub at https://github.com/gmammadova/hacker_weather.
